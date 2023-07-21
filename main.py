@@ -73,9 +73,9 @@ class Comment(db.Model):
     parent_post = relationship("BlogPost", back_populates="comments")
     post_id = db.Column(db.Integer, db.ForeignKey("blog_posts.id"))
     
-    
-# with app.app_context():
-#     db.create_all()
+
+with app.app_context():
+    db.create_all()
 
 
 login_manager = LoginManager()
