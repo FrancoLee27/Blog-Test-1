@@ -1,4 +1,4 @@
-{% from 'bootstrap/form.html' import render_form %}
+{% from 'bootstrap/wtf.html' import quick_form %}
 
 {% include "header.html" %}
 
@@ -29,7 +29,7 @@
             {% endfor %}
           {% endif %}
         {% endwith %}
-        {{ render_form(form) }}
+        {{ quick_form(form) }}
 
       </div>
     </div>
